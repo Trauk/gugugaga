@@ -8,3 +8,6 @@ include_directories(${CMAKE_SOURCE_DIR}/includes)
 add_library(student_lib STATIC tools/student.cpp)
 add_executable(student_app src/main.cpp)
 target_link_libraries(student_app student_lib)
+
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
