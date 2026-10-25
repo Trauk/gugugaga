@@ -11,3 +11,5 @@ target_link_libraries(student_app student_lib)
 
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(opencv_app src/opencv_main.cpp)
+target_link_libraries(opencv_app ${OpenCV_LIBS})
