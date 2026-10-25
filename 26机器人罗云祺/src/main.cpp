@@ -1,15 +1,10 @@
-#include <opencv2/opencv.hpp>
-using namespace cv;
+#include "student.hpp"
 
 int main() 
 {
-    Mat img = imread("/home/trauk/show_img_project/imgs/armor2.jpg"); 
-    
-    if (img.empty()) {
-        return -1;
-    }
-
-    imshow("Image", img);
-    waitKey(0);
+    Student s("张三", 59);
+    s.printInfo();
+    s.setScore(60);
+    s.printInfo();
     return 0;
 }
