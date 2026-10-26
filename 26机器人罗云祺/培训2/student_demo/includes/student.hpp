@@ -9,7 +9,7 @@ private:
     int score;
 
 public:
-    Student(string name, int score);
+    std :: Student(string name, int score);
     void printInfo() const;
     void setScore(int newScore);
     int getScore() const;
